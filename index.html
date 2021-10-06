@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+   
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS intro</title>
+  </head>
+  <body>
+    <h1>I am doing js practice</h1>
+    <button type="button" onclick="document.getElementById('DatePara').innerHTML=Date()"> See current Date</button>
+    <p id="DatePara"></p>
+<br>
+
+<button onclick="document.getElementById('bulb').src='./images/pic_bulboff.gif'" >off it</button>
+<img id='bulb' src="./images/pic_bulboff.gif" alt="bulb image" >
+<button onclick="document.getElementById('bulb').src='./images/pic_bulbon.gif'" >on it</button>
+
+<!-- <script>print();</script>  -->
+
+<br>
+
+<script>
+
+const person={
+    fname:"Umar",
+    lname : "Farooq",
+    fullName : function() {
+    return this.fname + " " + this.lname;
+  }
+};
+
+
+person.age=21;
+    document.write(person.fullName())
+
+
+
+</script>
+
+
+<br>
+
+<button onclick="this.innerHTML=Date()">Current Date?</button>
+
+<script src="./js/indexScript.js"> </script>
+</html>
